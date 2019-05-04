@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Sport Sputnik Blog</title>
+  <!-- Name von dem Tab title im Browser -->
+  <meta charset="utf-8">
+  <!-- damit alle Zeichen annerkant im Browser -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- verlinkungen zu css datei -->
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/myData.css">
+
+</head>
+
+
+<body>
+
+  <header>
+    <h1>Sport Sputnik Blog</h1>
+    <!-- Blog title -->
+    <img alt="Sputnik" src="Bild/logo.gif" title="Welcome to Sportblog!">
+  </header>
+
+
+  <nav>
+    <!-- navigation anfang -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bloggers.html">Bloggers</a></li>
+      <li><a href="sportarten.html">Sportarten</a></li>
+      <li><a href="umfrage.html">Umfrage</a></li>
+      <li class="active"><a href="spiel.html" id="spiel">Spiel</a></li>
+    </ul>
+  </nav>
+  <!-- ende navigation -->
+
+
+  <section>
+    <h2>Welcome to the "Rock, Paper, Scissors" Game</h2>
+    <img src="Bild/game.png" alt="game" id="gamebild">
+  </section>
+
+
+  <section id="game">
+
+    <h4>Spieler</h4>
+    <img id="papier1" src="Bild/paper.jpg" alt="1" class="spieler"><br>
+    <img id="schere1" src="Bild/scissors.jpg" alt="2" class="spieler">
+    <br>
+    <img id="stein1" src="Bild/rock.jpg" alt="3" class="spieler">
+
+    <h4>Computer</h4>
+    <img id="papier2" src="Bild/paper.jpg" alt="1" class="computer">
+    <br>
+    <img id="schere2" src="Bild/scissors.jpg" alt="2" class="computer">
+    <br>
+    <img id="stein2" src="Bild/rock.jpg" alt="3" class="computer">
+
+  </section>
+
+  <footer>
+    <cite>@HTW Berlin 2017</cite>
+    <a href="spiel.html">
+            <img alt="" src="Bild/top.png" class="top" height="100" width="100">
+        </a>
+  </footer>
+
+  <!-- Verlinkungen zu javascript -->
+  <script src="Javascript/spiel.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Es ist eine Instruktion zum Webbrowser, über welche Version von HTML die Seite geschrieben wird. -->
+<html lang="en">
+<!-- Deklariere die primäre Sprache für jede Webseite -->
+
+<head>
+  <!-- Es ist ein Container für alle Kopfelemente. Es kann einen Titel für das Dokument, Skripte, Stile, Metainformationen und vieles mehr enthalten.-->
+
+  <title>Sport Sputnik Blog</title>
+  <!-- Name von dem Tab title im Browser -->
+  <meta charset="utf-8">
+  <!-- damit alle Zeichen annerkant im Browser -->
+
+  <!-- damit man nicht horizontal-richtung scrollen muss, da im mobile nur vertikal scrollen! -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- verlinkungen zu css datei -->
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/myData.css">
+
+  <!-- Verlinkungen zu javascript -->
+  <script type="text/javascript" src="Javascript/control.js"></script>
+
+</head>
+
+
+<body>
+  <!-- Dies definiert den Körper des Dokuments. Dies enthält alle Inhalte eines HTML-Dokuments wie Text, Hyperlinks, Bilder, Tabellen, Listen usw. -->
+
+  <header>
+    <!-- Das repräsentiert einen Container für einleitende Inhalte oder einen Satz von Navigationsverknüpfungen. Ein <header> -Element enthält typischerweise: Ein oder mehrere Überschriftselemente (<h1> - <h6>), Logo oder Symbol, Autorenschaft, Sie können mehrere <header> Elemente in einem Dokument haben.-->
+
+    <!-- Die <h1> bis <h6>-Tags werden verwendet, um HTML-Überschriften zu definieren. <H1> definiert die wichtigste Überschrift. <H6> definiert die am wenigsten wichtige Überschrift.-->
+
+    <h1>Sport Sputnik Blog</h1>
+    <!-- Überschrift -->
+    <img alt="Sputnik" src="Bild/logo.gif" title="Welcome to Sportblog!">
+
+  </header>
+
+
+  <!--Der Tag <nav> definiert einen Satz von Navigationslinks.
+    Das <ul> -Tag definiert eine ungeordnete (Aufzählung) Liste. Verwenden Sie das <ul> -Tag zusammen mit dem <li> -Tag, um ungeordnete Listen zu erstellen.-->
+  <nav>
+    <!-- navigation anfang -->
+    <ul>
+      <li class="active"><a href="index.html"></a>Home</li>
+      <li><a href="bloggers.html">Bloggers</a></li>
+      <li><a href="sportarten.html">Sportarten</a></li>
+      <li><a href="umfrage.html">Umfrage</a></li>
+      <li><a href="spiel.html" id="spiel">Spiel</a></li>
+    </ul>
+  </nav>
+  <!-- ende navigation -->
+
+
+  <section>
+    <!--Das definiert Abschnitte in einem Dokument, wie z. B. Kapitel, Kopfzeilen, Fußzeilen oder andere Abschnitte des Dokuments.-->
+
+    <h2>Beiträge:</h2>
+
+    <hr>
+
+    <article>
+      <!--Das <article> -Tag gibt unabhängige, in sich geschlossene Inhalte an. Ein Artikel sollte selbstverständlich sein und es sollte möglich sein, ihn unabhängig vom Rest der Seite zu verteilen. Mögliche Quellen für das <article> -Element: Forumspost, Blogeintrag, Nachrichtenbeitrag, Kommentar-->
+
+      <h3>Schwimmen für Entspannen</h3>
+      <h5>Blog post by <a href="bloggers.html">Morty</a></h5>
+
+      <!--Das erforderliche alt-Attribut gibt einen alternativen Text für ein Bild an, wenn das Bild nicht angezeigt werden kann.-->
+      <img alt="" src="Bild/schimmen.jpg" class="left">
+
+      <p>
+        <!--Das <p> -Tag definiert einen Absatz.-->
+        Only when I get properly in the water that I really am sure of my new goals. I need to get back into that kind of competitive mindset where I'll start to think about the goals and that will only really come with the rhythm of training. But it's likely
+        I will swim some different events that I haven't done much of at international level. More backstroke, maybe some sprints. Stuff I've not concentrated on before. That diversity will keep it interesting for us, for me and Bob, and set us some new
+        challenges. But, like I said, I guess I will only really be sure about these new events I'm going to swim once I'm training on a daily basis. That will really dictate the goals I set myself. But, sure, in my own head I have a good idea – basically
+        I want to have a crack at those events that I haven't really swum too much before at international level.
+      </p>
+      <h5>Posted on 5.02.2017</h5>
+    </article>
+    <hr>
+    <article>
+      <h3>Breaking Bad auf dem Volleyballspielplatz</h3>
+      <h5>Blog post by <a href="bloggers.html">Rick</a></h5>
+      <img alt="" src="Bild/volleyball.jpg" class="left">
+      <p> So, guys, I am more than happy to have my first blog post just two days after I have announced the blog :). I know I’ve promised you to hear from me back this Saturday but surprisingly (in a very positive way!) I was contacted by a Bulgarian girl
+        who kindly asked me if it is possible to have a post about Mr. Bulgarian Volleyball <strong>Gordan Lyutskanov</strong> and if it was possible to post it on Monday. Firstly I wanted to save it to Saturday but it results that the young Bulgarian
+        volleyball player has today his Birthday! So, as a matter of fact, this article is the gift from <strong>Malinka Dimitrova</strong> to Mr. Bulgarian Volleyball. And I am sure he will be well surprised (although I do not know him personally). Because
+        the story in the article might be only about how a guy started to play volleyball and turned out to be successful. But the story of the post is about how good friends want to wish you Happy Birthday and shout it loudly all over the world!</p>
+      <h5>Posted on 19.03.2017</h5>
+    </article>
+    <hr>
+    <article>
+      <h3>Running in Berliner Marathon 2k17</h3>
+      <h5>Blog post by <a href="bloggers.html">Morty</a></h5>
+      <img alt="" src="Bild/marathon.jpg" class="left">
+      <p>To win a marathon in a record time, you need to have pacemakers, sometimes called "rabbits" in runners' circles. These guys are often up-and-coming young athletes who run with the top competitors in the early stages of the race to keep your speed
+        up. By doing so, they help push them to the finish line in a record time. At the start line for this year's race I notice a rabbit in front of me too. This one is dressed head to toe in a rabbit costume though. I'm certainly not going to keep
+        pace with a guy in a fluffy pink onesie, and I soon overtake him as soon as we set off. Over the first few kilometers the streets are lined with onlookers, even though this part of Berlin actually isn't a residential area. We are running through
+        the city's main park, the Tiergarten, and many friends and family members gather here to cheer on their loved ones or hold up a sign. Once again, like every year, it's amazing to see so many national flags here as well. The red and white of Denmark
+        seems to be everywhere I look. A lot of runners from up north traditionally travel down to take part in the Berlin Marathon.
+      </p>
+      <h5>Posted on 21.03.2017</h5>
+    </article>
+
+  </section>
+
+
+  <!--Das <footer> -Tag definiert eine Fußzeile für ein Dokument oder einen Abschnitt. Ein <footer> -Element sollte Informationen über sein enthaltendes Element enthalten. Ein <footer> Element enthält typischerweise: Autorenschaft, Urheberrechtsinformation, Kontakt Informationen, Sitemap, Zurück nach oben links, zugehörige Dokumente-->
+  <footer>
+    <cite>@HTW Berlin 2017</cite>
+    <a href="index.html">
+            <img alt="" src="Bild/top.png" class="top" height="100" width="100">
+        </a>
+  </footer>
+
+
+</body>
+<!-- ende inhalt -->
+
+</html>

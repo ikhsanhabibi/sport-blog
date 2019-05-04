@@ -1,0 +1,107 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+  <!-- comment -->
+  <title>Sport Sputnik Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/myData.css">
+
+  <!-- Verlinkungen zu javascript -->
+  <script type="text/javascript" src="Javascript/umfrage.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Sport Sputnik Blog</h1>
+    <img alt="logo" class="logo" src="Bild/logo.gif" title="logo">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bloggers.html">Bloggers</a></li>
+      <li><a href="sportarten.html">Sportarten</a></li>
+      <li class="active"> <a href="umfrage.html"></a>Umfrage </li>
+      <li><a href="spiel.html" id="spiel">Spiel</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Umfrage</h2>
+
+    <!-- Mit dem <form> -Tag wird ein HTML-Formular für die Benutzereingabe erstellt. Das <form> -Element kann eines oder mehrere der folgenden Formularelemente enthalten:<Input>, <Textarea>, <Button>, <Select>, <Option, <Optgroup>, <Fieldset>, <Label>-->
+    <form id="form" action="./spiel.html">
+      <fieldset>
+        <legend>Persönliche Daten</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="date">Geburtsdatum</label>
+        <input type="date" id="date" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Lieblingssport</legend>
+
+        <input id="Schwimmen" type="checkbox" class="lieblingssport" name="sportarten">
+        <label for="Schwimmen">Schwimmen</label>
+
+        <input id="Volleyball" type="checkbox" class="lieblingssport" name="sportarten">
+        <label for="Volleyball">Volleyball</label>
+
+        <input id="Joggen/Laufen" type="checkbox" class="lieblingssport" name="sportarten">
+        <label for="Joggen/Laufen">Joggen/Laufen</label>
+
+        <input id="Fußball" type="checkbox" class="lieblingssport" name="sportarten">
+        <label for="Fußball">Fußball</label>
+
+        <input id="Badminton/Tenis" type="checkbox" class="lieblingssport" name="sportarten">
+        <label for="Badminton/Tenis">Badminton/Tenis</label>
+
+        <input id="Fahrradfahren" type="checkbox" class="lieblingssport" name="sportarten">
+        <label for="Fahrradfahren">Fahrradfahren</label>
+      </fieldset>
+
+
+      <div>
+        <fieldset>
+          <label class="message">Erzählen Sie ihre Sport-aktivitäten bei uns! ^_^ </label>
+          <br>
+          <textarea id="comment" class="message" maxlength="300" rows="10" cols="55" placeholder="Schreiben Sie hier ihre Kommentare..."></textarea>
+        </fieldset>
+      </div>
+
+
+      <input type="submit" id="sub">
+      <input type="reset" value="Reset">
+
+    </form>
+
+
+
+
+    <div>
+      <figure>
+        <h2>For your information</h2>
+        <img alt="grafik" class="grafik" src="Bild/grafik.jpg" title="grafik">
+        <figcaption> Grafik/Quelle: Bewegungensstudie von Techniker Krankenkasse</figcaption>
+      </figure>
+    </div>
+
+  </section>
+
+
+  <footer>
+    <cite>@HTW Berlin 2017</cite>
+    <a href="umfrage.html">
+            <img alt="" src="Bild/top.png" class="top" height="100" width="100">
+        </a>
+  </footer>
+
+</body>
+
+</html>
